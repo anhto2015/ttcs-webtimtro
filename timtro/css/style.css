@@ -34,7 +34,7 @@ header .top-header .top-right span .fa {
 
 header .main-header {
     padding: 10px 0;
-    padding-bottom: 6px;
+    padding-bottom: 0px;
     border-bottom: 1px solid #ededed;
 }
 
@@ -484,7 +484,6 @@ footer .content-footer {
 
 footer .content-footer {
     padding-top: 50px;
-    padding-bottom: 30px;
     background: #202020;
     color: #ededed;
 }
@@ -614,4 +613,73 @@ footer .back-to-top i {
     color: #ffffff;
     font-size: 30px;
     font-weight: bold;
+}
+
+#content .sidebar .widget {
+    margin-bottom: 25px;
+    background: #fff;
+}
+
+.content .sidebar .widget h3 {
+    background: #055699;
+    color: #fff;
+    text-transform: uppercase;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.content .sidebar .widget .content-view {
+    padding: 5px;
+}
+
+.content .sidebar .widget h3 span .fa {
+    height: 35px;
+    width: 35px;
+    background: #FF9800;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 5px;
+}
+
+.content .sidebar .widget .content-w ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #ededed;
+}
+
+.content .sidebar ul li img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    padding: 1px;
+    border: 1px solid #ededed;
+    float: left;
+    margin-right: 5px;
+}
+
+.content .sidebar .widget .content-w ul li h4 a {
+    color: #055699;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+h4 {}
+
+.content .sidebar .widget a {
+    color: #055699;
+    font-weight: 550;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.content .sidebar .widget ul li p {
+    margin-top: 5px;
+}
+
+.content .sidebar .widget ul li span {
+    color: #888;
+    font-size: 13px;
 }
