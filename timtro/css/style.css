@@ -550,3 +550,68 @@ footer .content-footer .info-contact p .fa.fa-globe {
 footer {
     background: #fff;
 }
+
+footer .content-footer .block-content-ft {
+    border-top: 1px solid #444;
+    padding-top: 15px;
+    margin-bottom: 30px;
+}
+
+footer .content-footer .block-content-ft ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #444;
+}
+
+footer .content-footer .block-content-ft ul li a {
+    color: #fff;
+}
+
+footer .content-footer .block-content-ft ul li a:hover {
+    color: #4caf50;
+}
+
+.block-content-ft .form-control {
+    margin-bottom: 5px;
+    border: 1px solid #b2bac1;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.block-content-ft .contact-button {
+    padding: 11px 20px;
+    border: none;
+    display: inline-block;
+    border-radius: 30px;
+    background: #065699;
+    color: #fff;
+}
+
+footer .copyright {
+    padding: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+footer .copyright a {
+    color: #fff;
+}
+
+footer .back-to-top {
+    position: fixed;
+    bottom: 26px;
+    right: 100px;
+    display: none;
+    cursor: pointer;
+    z-index: 99;
+}
+
+footer .back-to-top i {
+    background: #055699;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+}
