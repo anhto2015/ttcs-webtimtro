@@ -19,11 +19,27 @@
 <body>
     <div class="wrapper">
         <?php
-        include('modules/header.php');
-        include('modules/banner-search.php');
-        include('modules/content.php');
-        include('modules/footer.php');
-         ?>
+        include('modules/header.php');?>
+<?php include('modules/banner-search.php'); ?>
+
+    
+        <!-- start-content -->
+<div class="content">
+
+<div class="main-content">
+                <div class="container">
+                    <div class="row">
+
+              <?php include('modules/content.php');
+                  include('modules/content-right.php'); ?>
+                    </div>
+                </div>
+            </div>
+        
+        <!-- end-content -->
+</div>
+        
+        <?php include('modules/footer.php');?>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/jquery-3.4.1.min.js"></script>
             <script src="js/js.js"></script>

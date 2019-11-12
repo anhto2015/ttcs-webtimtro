@@ -14,7 +14,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -52,7 +52,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -90,7 +90,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -128,7 +128,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -166,7 +166,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -204,7 +204,7 @@
                                 <div class="detail-list">
                                     <div class="img-bds">
                                         <a href="#">
-                                            <img src="resources/image/info-tro.png" alt="">
+                                            <img src="image/info-tro.png" alt="">
 
                                         </a>
                                         <span>HOT</span>
@@ -267,7 +267,7 @@
                                             <div class="list-reals">
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -310,7 +310,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -353,7 +353,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -396,7 +396,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -439,7 +439,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -482,7 +482,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -525,7 +525,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -568,7 +568,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -611,7 +611,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -654,7 +654,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -697,7 +697,7 @@
                                                 </div>
                                                 <div class="detail-list">
                                                     <a href="#">
-                                                        <img src="resources/image/info-tro.png" alt="">
+                                                        <img src="image/info-tro.png" alt="">
                                                     </a>
                                                     <div class="info-real">
                                                         <h4>
@@ -762,7 +762,7 @@
                                     </h3>
                                     <div class="content-view">
                                         <a href="#">
-                                            <img src="resources/image/dang-tin-mien-phi.jpg" alt="">
+                                            <img src="image/dang-tin-mien-phi.jpg" alt="">
                                         </a>
                                     </div>
                                     <div class="clearfix"></div>
@@ -771,7 +771,7 @@
 
                                     <div class="content-view">
                                         <a href="#">
-                                            <img src="resources/image/gia-dinh-nh.png" alt="">
+                                            <img src="image/gia-dinh-nh.png" alt="">
                                         </a>
                                     </div>
                                     <div class="clearfix"></div>
@@ -803,7 +803,7 @@
                                         <ul>
                                             <li>
                                                 <a href="#">
-                                                    <img src="resources/image/cafe-home.jpg" alt="">
+                                                    <img src="image/cafe-home.jpg" alt="">
                                                 </a>
                                                 <h4>
                                                     <a href="#">Top 7 quán cafe đẹp ở Nghệ An mà bạn nên đến check in</a>
@@ -817,7 +817,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="resources/image/cafe-home.jpg" alt="">
+                                                    <img src="image/cafe-home.jpg" alt="">
                                                 </a>
                                                 <h4>
                                                     <a href="#">Top 7 quán cafe đẹp ở Nghệ An mà bạn nên đến check in</a>
@@ -831,7 +831,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="resources/image/cafe-home.jpg" alt="">
+                                                    <img src="image/cafe-home.jpg" alt="">
                                                 </a>
                                                 <h4>
                                                     <a href="#">Top 7 quán cafe đẹp ở Nghệ An mà bạn nên đến check in</a>
@@ -845,7 +845,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="resources/image/cafe-home.jpg" alt="">
+                                                    <img src="image/cafe-home.jpg" alt="">
                                                 </a>
                                                 <h4>
                                                     <a href="#">Top 7 quán cafe đẹp ở Nghệ An mà bạn nên đến check in</a>
@@ -859,7 +859,7 @@
                                             </li>
                                             <li>
                                                 <a href="#">
-                                                    <img src="resources/image/cafe-home.jpg" alt="">
+                                                    <img src="image/cafe-home.jpg" alt="">
                                                 </a>
                                                 <h4>
                                                     <a href="#">Top 7 quán cafe đẹp ở Nghệ An mà bạn nên đến check in</a>

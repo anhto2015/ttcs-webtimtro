@@ -50,7 +50,7 @@
                 <div class="container">
                     <div class="logo">
                         <a href="#">
-                            <img src="../resources/image/logo.png" alt="Phòng trọ tp Vinh">
+                            <img src="image/logo.png" alt="Phòng trọ tp Vinh">
                         </a>
                     </div>
                     <div class="top-menu">
