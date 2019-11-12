@@ -36,9 +36,9 @@
                                         </a>
                                     </span>
                                     <span class="account">
-                                        <a href="user/dangnhap.php">Đăng nhập</a>
+                                        <a href="index.php?p=dangnhap">Đăng nhập</a>
                                         /
-                                        <a href="user/dangki.php">Đăng kí</a>
+                                        <a href="index.php?p=dangki">Đăng kí</a>
                                     </span>
                                 </p>
                             </div>
@@ -49,7 +49,7 @@
             <div class="main-header">
                 <div class="container">
                     <div class="logo">
-                        <a href="#">
+                        <a href="index.php">
                             <img src="image/logo.png" alt="Phòng trọ tp Vinh">
                         </a>
                     </div>
