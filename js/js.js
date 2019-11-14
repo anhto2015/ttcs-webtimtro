@@ -13,3 +13,12 @@
 
         );
     });
+
+
+    $(document).ready(function() {
+        $(".account").hover(function() {
+            $(".acc-top").attr("style", "display: block");
+        }, function() {
+            $(".acc-top").attr("style", "display: none ");
+        });
+    });

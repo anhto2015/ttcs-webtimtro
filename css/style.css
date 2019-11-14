@@ -76,14 +76,11 @@ header .main-header .top-menu ul li a {
 header .main-header .top-menu ul li ul {
     text-align: left;
     position: absolute;
-    width: 200px;
-    background: rgba(255, 255, 255, 0.82);
+    width: 150px;
     left: 0;
-    z-index: 99;
-    top: 60px;
-    visibility: hidden;
-    opacity: 0;
-    transition: all .3s;
+    top: 30px;
+    background: #fff;
+    display: none;
 }
 
 header .main-header .top-menu ul li ul li {
@@ -920,4 +917,48 @@ article.post-content img {
     padding-bottom: 10px;
     font-size: 20px;
     border-bottom: 1px solid #ededed;
+}
+
+li.menu-item-2:hover .sub-menu {
+    display: block;
+}
+
+.acc-top {
+    position: absolute;
+    background: #585858f0;
+    right: 0;
+    width: 160px;
+    z-index: 9;
+    display: none;
+}
+
+.acc-top ul li {
+    padding: 0px 15px;
+}
+
+.acc-top ul li .fa {
+    margin-right: 7px;
+}
+
+.drop-dow {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 13px;
+}
+
+.drop-dow {
+    position: relative;
+    display: inline-block;
+}
+
+.drop-dow:hover .acc-top {
+    display: block;
+}
+
+header .top-header .acc-top p {
+    margin: 0;
+    padding: 0;
+    line-height: 30px;
+    font-size: 12px;
 }

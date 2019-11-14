@@ -1,3 +1,5 @@
+<?php require"lib/dbcon.php"; ?>
+
 <?php 
 if(isset($_GET["p"]))
       $p=$_GET["p"]; 
@@ -17,6 +19,7 @@ if(isset($_GET["p"]))
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="font/css/font-awesome.min.css">
+    
 </head>
 
 <body>
@@ -41,7 +44,12 @@ if(isset($_GET["p"]))
                     include"user/dangki.php"; break;
                     case "chitiettin" :
                         include"modules/divmaincontent.php";
-                        include"pages/chitiettin.php";
+                        include"pages/chitiettin.php"; break;
+                        case "tintheoloai" :
+                            include"modules/divmaincontent.php";
+                            include"pages/tintheoloai.php"; break;
+
+
                   }
 ?>
                 
@@ -51,7 +59,7 @@ if(isset($_GET["p"]))
             </div>
         </div>
     </div>
-        
+    
         <?php include('modules/footer.php');?>
             <script src="js/bootstrap.min.js"></script>
             <script src="js/jquery-3.4.1.min.js"></script>

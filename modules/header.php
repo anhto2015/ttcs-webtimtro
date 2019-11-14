@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!-- start-header -->
 <header>
             <div class="top-header">
@@ -20,27 +21,14 @@
                         </div>
                         <div class="col-12 col-xs-5 col-sm-5 col-md-6 col-lg-6">
                             <div class="top-right pull-right">
-                                <p>
-                                    <span class="social">
-                                        <a href="#">
-                                            <i class="fa fa-facebook"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-google-plus"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-twitter"></i>
-                                        </a>
-                                        <a href="#">
-                                            <i class="fa fa-youtube"></i>
-                                        </a>
-                                    </span>
-                                    <span class="account">
-                                        <a href="index.php?p=dangnhap">Đăng nhập</a>
-                                        /
-                                        <a href="index.php?p=dangki">Đăng kí</a>
-                                    </span>
-                                </p>
+                        <!-- include-user -->
+                        <?php if(!isset($_SESSION["Id"])){
+                            require"modules/login-header.php";
+                        }
+                        else{
+                            require"modules/user-header.php";
+                        }
+                         ?>
                             </div>
                         </div>
                     </div>
@@ -59,13 +47,13 @@
                                 <a href="index.php">Trang chủ</a>
                             </li>
                             <li class="menu-item-2">
-                                <a href="#">Phòng trọ</a>
+                                <a href="index.php?p=tintheoloai">Phòng trọ</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item-10">
-                                        <a href="#">Phòng cho thuê</a>
+                                        <a href="index.php?p=tintheoloai">Phòng cho thuê</a>
                                     </li>
                                     <li class="menu-item-10">
-                                        <a href="#">Ở ghép</a>
+                                        <a href="index.php?p=tintheoloai">Ở ghép</a>
                                     </li>
                                 </ul>
                             </li>
