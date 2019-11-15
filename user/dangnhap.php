@@ -1,6 +1,6 @@
 
-<?php //kiem tra dang nhap
 
+<?php //kiem tra dang nhap
 include"lib/dbcon.php";
 if(isset($_POST["submit"])){
     $un=$_POST["log"];
@@ -12,17 +12,17 @@ if(isset($_POST["submit"])){
         $row=mysqli_fetch_array($user);
         $_SESSION["Id"]=$row['Id'];
         $_SESSION["Taikhoan"]=$row['Taikhoan'];
+        header('location:index.php');
     }
-    else{
-        echo'Tài khoản sai';
-    }
-} ?>
-
+    else{ ?>
 <div class="col-xs-12 col-col-md-12 col-sm-12 col-lg-9">
                         <div class="content">
                             <div class="single-post-new">
                                 <div class="content-single-news">
                                     <h3>Đăng nhập</h3>
+                                    <h4 class="thongbao">
+                                        <?php echo'Tài khoản hoặc mật khẩu không chính xác';}}?>
+                                    </5>
                                     <article class="post-content">
                                         <div class="login">
                                             <div class="formdangnhap">

@@ -1,9 +1,4 @@
-<?php include"lib/dbcon.php"; 
-if(isset($_POST["logout"])){
-    unset($_SESSION["Id"]);
-    unset($_SESSION["Taikhoan"]);
-}
-?>
+
 <div class="drop-dow">
     <span class="social">
                 <a href="#">
@@ -26,9 +21,7 @@ if(isset($_POST["logout"])){
         Tài khoản
         <i class="fa fa-caret-down"></i>
         </a>
- </span>
- 
- <div class="acc-top">
+ </span><div class="user-top">
     <ul>
         <li>
             <p>
@@ -65,7 +58,7 @@ if(isset($_POST["logout"])){
         <li>
             <p>
                 <i class="fa fa-sign-out"></i>
-                <a href="index.php" name="logout">
+                <a href="user/xulydangxuat.php">
                     Đăng xuất
                 </a>
             </p>

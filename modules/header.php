@@ -1,4 +1,5 @@
-<?php session_start();?>
+<?php session_start();
+ob_start();?>
 <!-- start-header -->
 <header>
             <div class="top-header">
@@ -26,14 +27,12 @@
                             require"modules/login-header.php";
                         }
                         else{
-                            require"modules/user-header.php";
-                        }
-                         ?>
-                            </div>
+                            require"modules/user-header.php";}?></div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="main-header">
                 <div class="container">
                     <div class="logo">

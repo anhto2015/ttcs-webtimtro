@@ -923,16 +923,16 @@ li.menu-item-2:hover .sub-menu {
     display: block;
 }
 
-.acc-top {
+.user-top {
     position: absolute;
     background: #585858f0;
     right: 0;
     width: 160px;
-    z-index: 9;
+    z-index: 999;
     display: none;
 }
 
-.acc-top ul li {
+.user-top ul li {
     padding: 0px 15px;
 }
 
@@ -952,13 +952,19 @@ li.menu-item-2:hover .sub-menu {
     display: inline-block;
 }
 
-.drop-dow:hover .acc-top {
+.drop-dow:hover .user-top {
     display: block;
 }
 
-header .top-header .acc-top p {
+header .top-header .user-top p {
     margin: 0;
     padding: 0;
     line-height: 30px;
     font-size: 12px;
+}
+
+h4.thongbao {
+    text-align: center;
+    font-weight: 600;
+    color: red;
 }
