@@ -12,7 +12,7 @@ if(isset($_POST["submit"])){
         $row=mysqli_fetch_array($user);
         $_SESSION["Id"]=$row['Id'];
         $_SESSION["Taikhoan"]=$row['Taikhoan'];
-        header('location:index.php');
+        header('location: index.php');
     }
     else{ ?>
 <div class="col-xs-12 col-col-md-12 col-sm-12 col-lg-9">
@@ -41,7 +41,7 @@ if(isset($_POST["submit"])){
                                                     </p>
                                                 </form>
                                                 <div class="pull-right">
-                                                    <a href="#" title="Đăng kí">Đăng kí</a>
+                                                    <a href="index.php?p=dangki" title="Đăng kí">Đăng kí</a>
                                                 </div>
                                                 <div class="clear-fix"></div>
                                             </div>
