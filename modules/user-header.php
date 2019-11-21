@@ -34,7 +34,7 @@
         <li>
             <p>
                 <i class="fa fa-refresh"></i>
-                <a href="#">
+                <a href="index.php?p=doimatkhau">
                     Đổi mật khẩu
                 </a>
             </p>

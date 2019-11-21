@@ -81,6 +81,7 @@ header .main-header .top-menu ul li ul {
     top: 30px;
     background: #fff;
     display: none;
+    z-index: 999;
 }
 
 header .main-header .top-menu ul li ul li {
@@ -967,4 +968,33 @@ h4.thongbao {
     text-align: center;
     font-weight: 600;
     color: red;
+}
+
+article.post-content table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    line-height: 2;
+    margin: 0 0 20px;
+    width: 100%;
+}
+
+article.post-content table {
+    border-left: 1px solid #777777;
+}
+
+article.post-content table thead {
+    background: #065699;
+    color: #fff;
+    border: 1px solid #065699;
+}
+
+article.post-content th {
+    font-weight: normal !important;
+    text-transform: uppercase;
+    border: 1px solid #ededed;
+}
+
+.item textarea.form-control {
+    height: 160px;
 }

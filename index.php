@@ -49,6 +49,16 @@ if(isset($_GET["p"]))
                         case "tintheoloai" :
                             include"modules/divmaincontent.php";
                             include"pages/tintheoloai.php"; break;
+                            case "doimatkhau":
+                                include"modules/divmaincontent.php";
+                                include"user/doimatkhau.php"; break;
+                                case "danhsachbaidang":
+                                    include"modules/divmaincontent.php";
+                                    include"user/danhsachbaidang.php"; break;
+                                    case "dangbai":
+                                        include"modules/divmaincontent.php";
+                                        include"user/dangbai.php"; break;
+
 
 
                   }

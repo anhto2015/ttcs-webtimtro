@@ -4,7 +4,7 @@
                 <div class="itop-search">
                     <div class="search-form">
                         <div class="search-form-title">
-                            <h2>Tìm phòng trọ thành phố Vinh</h2>
+                            <h2>Tìm phòng trọ cho Tân Lùn</h2>
                             <h3>Với hơn 100 bài đăng mỗi ngày tai Timtrovinh.com</h3>
                         </div>
                         <div class="search-form-wrap">
