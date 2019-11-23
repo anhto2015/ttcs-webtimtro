@@ -1,3 +1,5 @@
 <?php
-$con=mysqli_connect("localhost", "root", "","webtimtro") or die("Không thể kết nối");
+$con=new mysqli("localhost", "root", "","webtimtro") or die("Không thể kết nối");
+mysqli_set_charset($con, 'UTF8');
+
 ?>

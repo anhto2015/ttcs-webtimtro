@@ -1,3 +1,9 @@
+<?php 
+include"lib/dbcon.php";
+$sql = "SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong WHERE tbltin.Tinhot=0 LIMIT 0,6";
+$query=mysqli_query($con,$sql);
+?>
+
 <!-- start-tin-hot -->
 <div class="featured">
                 <div class="container">
@@ -9,21 +15,25 @@
                     <div class="content-featured">
                         <div class="row">
                             
+                            <?php while($row_tinhot=mysqli_fetch_array($query))
+                            {
+
                             
+                            ?>
                             <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
                                 <div class="detail-list">
                                     <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
+                                        <a href="index.php?p=chitiettin&idtin=<?php echo $row_tinhot['Idtin'] ?>">
+                                            <img src="image/info/<?php echo $row_tinhot['Anh'] ?>" alt="">
 
                                         </a>
                                         <span>HOT</span>
                                     </div>
                                     <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
+                                        <h4><a href="index.php?p=chitiettin&idtin=<?php echo $row_tinhot['Idtin'] ?>">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
                                         <p>
                                             <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
+                                            <strong><?php echo $row_tinhot['Gia'] ?>đ/ Tháng</strong>
                                         </p>
 
                                         <p>
@@ -31,7 +41,7 @@
                                                 
                                                 
                                             </i> Diện tích:
-                                            <strong>20m
+                                            <strong><?php echo $row_tinhot['Dientich'] ?>m
                                                     <sup>2</sup>
                                                 </strong>
                                         </p>
@@ -41,203 +51,15 @@
                                             </i>
                                             <span>
                                                     Khu vực:
-                                                    <strong>Bến Thủy</strong>
+                                                    <strong><?php echo $row_tinhot['Tenphuong'] ?></strong>
                                                 </span>
                                         </p>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-                                <div class="detail-list">
-                                    <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
-
-                                        </a>
-                                        <span>HOT</span>
-                                    </div>
-                                    <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
-                                        <p>
-                                            <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
-                                        </p>
-
-                                        <p>
-                                            <i class="fa fa-map-o">
-                                                
-                                                
-                                            </i> Diện tích:
-                                            <strong>20m
-                                                    <sup>2</sup>
-                                                </strong>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker">
-                                                
-                                            </i>
-                                            <span>
-                                                    Khu vực:
-                                                    <strong>Bến Thủy</strong>
-                                                </span>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-                                <div class="detail-list">
-                                    <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
-
-                                        </a>
-                                        <span>HOT</span>
-                                    </div>
-                                    <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
-                                        <p>
-                                            <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
-                                        </p>
-
-                                        <p>
-                                            <i class="fa fa-map-o">
-                                                
-                                                
-                                            </i> Diện tích:
-                                            <strong>20m
-                                                    <sup>2</sup>
-                                                </strong>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker">
-                                                
-                                            </i>
-                                            <span>
-                                                    Khu vực:
-                                                    <strong>Bến Thủy</strong>
-                                                </span>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-                                <div class="detail-list">
-                                    <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
-
-                                        </a>
-                                        <span>HOT</span>
-                                    </div>
-                                    <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
-                                        <p>
-                                            <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
-                                        </p>
-
-                                        <p>
-                                            <i class="fa fa-map-o">
-                                                
-                                                
-                                            </i> Diện tích:
-                                            <strong>20m
-                                                    <sup>2</sup>
-                                                </strong>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker">
-                                                
-                                            </i>
-                                            <span>
-                                                    Khu vực:
-                                                    <strong>Bến Thủy</strong>
-                                                </span>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-                                <div class="detail-list">
-                                    <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
-
-                                        </a>
-                                        <span>HOT</span>
-                                    </div>
-                                    <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
-                                        <p>
-                                            <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
-                                        </p>
-
-                                        <p>
-                                            <i class="fa fa-map-o">
-                                                
-                                                
-                                            </i> Diện tích:
-                                            <strong>20m
-                                                    <sup>2</sup>
-                                                </strong>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker">
-                                                
-                                            </i>
-                                            <span>
-                                                    Khu vực:
-                                                    <strong>Bến Thủy</strong>
-                                                </span>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6 col-xs-12 col-lg-6">
-                                <div class="detail-list">
-                                    <div class="img-bds">
-                                        <a href="index.php?p=chitiettin">
-                                            <img src="image/info-tro.png" alt="">
-
-                                        </a>
-                                        <span>HOT</span>
-                                    </div>
-                                    <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
-                                        <p>
-                                            <i class="fa fa-usd">  </i> Giá:
-                                            <strong>1 triệu 5/ Tháng</strong>
-                                        </p>
-
-                                        <p>
-                                            <i class="fa fa-map-o">
-                                                
-                                                
-                                            </i> Diện tích:
-                                            <strong>20m
-                                                    <sup>2</sup>
-                                                </strong>
-                                        </p>
-                                        <p>
-                                            <i class="fa fa-map-marker">
-                                                
-                                            </i>
-                                            <span>
-                                                    Khu vực:
-                                                    <strong>Bến Thủy</strong>
-                                                </span>
-                                        </p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
+                            <?php }?>
+                            
                         </div>
                     </div>
                 </div>

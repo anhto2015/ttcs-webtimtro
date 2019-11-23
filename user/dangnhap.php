@@ -10,7 +10,7 @@ if(isset($_POST["submit"])){
     $user=mysqli_query($con,$qr);
     if(mysqli_num_rows($user)==1){
         $row=mysqli_fetch_array($user);
-        $_SESSION["Id"]=$row['Id'];
+        $_SESSION["Id"]=$row['Iduser'];
         $_SESSION["Taikhoan"]=$row['Taikhoan'];
         header('location: index.php');
     }

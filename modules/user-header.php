@@ -42,7 +42,7 @@
         <li>
             <p>
                 <i class="fa fa-pencil-square"></i>
-                <a href="#">
+                <a href="index.php?p=dangbai">
                     Đăng bài
                 </a>
             </p>

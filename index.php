@@ -1,4 +1,8 @@
-<?php require"lib/dbcon.php"; ?>
+
+<?php require"lib/dbcon.php";
+
+
+session_start();?>
 
 <?php 
 if(isset($_GET["p"]))
@@ -6,7 +10,7 @@ if(isset($_GET["p"]))
     else 
     $p="";  
     
-      ?>
+      ?>    
 
 
 <!DOCTYPE html>
@@ -31,11 +35,10 @@ if(isset($_GET["p"]))
 
                   <?php switch("$p"){
                   case "": 
-                    include('modules/banner.php');
+                      include('modules/banner.php');
                        include('modules/tinhot.php');
                        include"modules/divmaincontent.php";
-
-                      include"modules/content-left.php"; break;
+                        include"modules/content-left.php"; break;
                    case "dangnhap" :
                     include"modules/divmaincontent.php";
                   require"user/dangnhap.php"; break;
@@ -46,9 +49,9 @@ if(isset($_GET["p"]))
                     case "chitiettin" :
                         include"modules/divmaincontent.php";
                         include"pages/chitiettin.php"; break;
-                        case "tintheoloai" :
+                        case "tinmoi" :
                             include"modules/divmaincontent.php";
-                            include"pages/tintheoloai.php"; break;
+                            include"pages/tinmoi.php"; break;
                             case "doimatkhau":
                                 include"modules/divmaincontent.php";
                                 include"user/doimatkhau.php"; break;
@@ -58,6 +61,10 @@ if(isset($_GET["p"]))
                                     case "dangbai":
                                         include"modules/divmaincontent.php";
                                         include"user/dangbai.php"; break;
+                                        case "tintheoloai":
+                                            include"modules/divmaincontent.php";
+                                             include"pages/tintheoloai.php"; break;
+
 
 
 

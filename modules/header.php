@@ -1,4 +1,4 @@
-<?php session_start();
+<?php 
 ob_start();?>
 <!-- start-header -->
 <header>
@@ -49,10 +49,13 @@ ob_start();?>
                                 <a href="index.php?p=tintheoloai">Phòng trọ</a>
                                 <ul class="sub-menu">
                                     <li class="menu-item-10">
-                                        <a href="index.php?p=tintheoloai">Phòng cho thuê</a>
+                                        <a href="index.php?p=tintheoloai&loaitin=1">Phòng cho thuê</a>
                                     </li>
                                     <li class="menu-item-10">
-                                        <a href="index.php?p=tintheoloai">Ở ghép</a>
+                                        <a href="index.php?p=tintheoloai&loaitin=2">Ở ghép</a>
+                                    </li>
+                                    <li class="menu-item-10">
+                                        <a href="index.php?p=tintheoloai&loaitin=3">Chung cư mini</a>
                                     </li>
                                 </ul>
                             </li>
