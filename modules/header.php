@@ -63,12 +63,12 @@ ob_start();?>
                                 <a href="#">Giới thiệu</a>
                             </li>
                             <li class="menu-item-4">
-                                <a href="#">Liên hệ</a>
+                                <a href="#footer">Liên hệ</a>
                             </li>
                         </ul>
                     </div>
                     <div class="button-submit">
-                        <a href="#">Đăng tin</a>
+                        <a href="index.php?p=dangbai">Đăng tin</a>
                     </div>
                     <div class="clearfix"></div>
                 </div>

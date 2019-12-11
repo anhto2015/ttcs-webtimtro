@@ -1,3 +1,7 @@
+<?php 
+if(!isset($_SESSION["Id"])){
+                            header("location:index.php?p=dangnhap");
+}?>
 <div class="col-xs-12 col-col-md-12 col-sm-12 col-lg-9">
     <div class="content">
         <div class="single-post-new">

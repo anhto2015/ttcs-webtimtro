@@ -4,7 +4,7 @@
                 <div class="itop-search">
                     <div class="search-form">
                         <div class="search-form-title">
-                            <h2>Tìm phòng trọ cho Tân Lùn</h2>
+                            <h2>Tìm phòng trọ tại TimtrotpVinh.com</h2>
                             <h3>Với hơn 100 bài đăng mỗi ngày tai Timtrovinh.com</h3>
                         </div>
                         <div class="search-form-wrap">
@@ -33,49 +33,49 @@
                                 <div class="col-xs-12 col-md-12 col-ms-12 col-lg-6">
                                     <div class="search-form-content">
                                         <h5 class="search-title-sub">Tìm kiếm nhanh theo nhu cầu</h5>
-                                        <form action="#">
+                                        <form action="pages/timkiem.php" method="GET">
                                             <div class="row">
                                                 <div class="col-lg-4">
-                                                    <select name="" id="input" class="form-control" required="required">
-                                                            <option value="all">Chọn Phường</option>
-                                                            <option value="">Bến Thủy</option>
-                                                            <option value="">Cửa Nam</option>
-                                                            <option value="">Đội Cung</option>
-                                                            <option value="">Đông Vĩnh</option>
-                                                            <option value="">Hà Huy Tập</option>
-                                                            <option value="">Hồng Sơn</option>
-                                                            <option value="">Hưng Bình</option>
-                                                            <option value="">Hưng Dũng</option>
-                                                            <option value="">Hưng Phúc</option>
-                                                            <option value="">Lê Lợi</option>
-                                                            <option value="">Lê Mao</option>
-                                                            <option value="">Quán Bàu</option>
-                                                            <option value="">Quang Trung</option>
-                                                            <option value="">Trung Đô</option>
-                                                            <option value="">Trường Thi</option>
-                                                            <option value="">Vinh Tân</option>
-                                                            <option value="">Hưng Chính</option>
-                                                            <option value="">Hưng Đông </option>
-                                                            <option value="">Hưng Hòa </option>
-                                                            <option value="">Hưng Lộc</option>
-                                                            <option value="">Nghi Ân</option>
-                                                            <option value="">Nghi Kim</option>
-                                                            <option value="">Nghi Đức</option>
-                                                            <option value="">Nghi Liên</option>
-                                                            <option value="">Nghi Phú</option>
+                                                    <select name="diachi" id="input" class="form-control" required="required">
+                                                            <option value="NULL">Chọn Phường</option>
+                                                            <option value="10">Bến Thủy</option>
+                                                            <option value="11">Cửa Nam</option>
+                                                            <option value="12">Đội Cung</option>
+                                                            <option value="13">Đông Vĩnh</option>
+                                                            <option value="14">Hà Huy Tập</option>
+                                                            <option value="15">Hồng Sơn</option>
+                                                            <option value="16">Hưng Bình</option>
+                                                            <option value="17">Hưng Dũng</option>
+                                                            <option value="18">Hưng Phúc</option>
+                                                            <option value="19">Lê Lợi</option>
+                                                            <option value="20">Lê Mao</option>
+                                                            <option value="21">Quán Bàu</option>
+                                                            <option value="22">Quang Trung</option>
+                                                            <option value="23">Trung Đô</option>
+                                                            <option value="24">Trường Thi</option>
+                                                            <option value="25">Vinh Tân</option>
+                                                            <option value="26">Hưng Chính</option>
+                                                            <option value="27">Hưng Đông </option>
+                                                            <option value="28">Hưng Hòa </option>
+                                                            <option value="29">Hưng Lộc</option>
+                                                            <option value="30">Nghi Ân</option>
+                                                            <option value="31">Nghi Kim</option>
+                                                            <option value="32">Nghi Đức</option>
+                                                            <option value="33">Nghi Liên</option>
+                                                            <option value="34">Nghi Phú</option>
                                                     </select>
 
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <select name="" id="input" class="form-control" required="required">
+                                                    <select name="loaitin" id="input" class="form-control" required="required">
                                                             <option value="all">Loại Tin</option>
-                                                            <option value="phong-tro">Phòng Trọ</option>
-                                                            <option value="o-ghep">Ở Ghép</option>
-                                                            <option value="chung-cu">Chug cư mini</option>
+                                                            <option value="1">Phòng Trọ</option>
+                                                            <option value="2">Ở Ghép</option>
+                                                            <option value="3">Chug cư mini</option>
                                                     </select>
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <select name="" id="input" class="form-control" required="required">
+                                                    <select name="dientich" id="input" class="form-control" required="required">
                                                             <option value="0">Diện tích</option>
                                                             <option value="1">Dưới 15m2</option>
                                                             <option value="2">15m2 - 20m2</option>
@@ -85,7 +85,7 @@
                                                     </select>
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <select name="" id="input" class="form-control" required="required">
+                                                    <select name="gia" id="input" class="form-control" required="required">
                                                             <option value="0">Khoảng giá</option>
                                                             <option value="1">Thỏa thuận</option>
                                                             <option value="2">Dưới 500k</option>
@@ -98,11 +98,12 @@
                                                 </div>
 
                                                 <div class="col-lg-4">
-                                                    <button class="submit-form">Tìm kiếm</button>
+                                                    <button class="submit-form" name="submit">Tìm kiếm</button>
                                                 </div>
+                                                
 
                                             </div>
-
+                                            <input type="hidden" name="p" value="timkiem">
                                         </form>
                                     </div>
                                 </div>

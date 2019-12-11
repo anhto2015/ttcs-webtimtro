@@ -1,7 +1,14 @@
 <?php 
+include"lib/dbcon.php";
 if(!isset($_SESSION["Id"])){
                             header("location:index.php");
-}?>
+                            }
+                            $id=($_SESSION["Id"]);
+                            settype($id,"int");
+                            $sql="SELECT * FROM tbltin WHERE Iduser=$id";
+                            $query_danhsach=mysqli_query($con,$sql);
+
+                            ?>
 <div class="col-xs-12 col-col-md-12 col-sm-12 col-lg-9">
     <div class="content">
         <div class="single-post-new">
@@ -17,36 +24,23 @@ if(!isset($_SESSION["Id"])){
                                 <th>Tác vụ</th>
                             </thead>
                             <tbody>
+                            <?php while($row_danhsach=mysqli_fetch_array($query_danhsach)){
+                                
+                                ?>
+                            
+                            
                                 <tr>
-                                    <td>1</td>
-                                    <td>Cho thuê phòng khu vực P</td>
-                                    <td>20/11/2019</td>
+                                    <td><?php echo $row_danhsach['Idtin'] ?></td>
+                                    <td><a href="index.php?p=chitiettin&idtin=<?php echo $row_danhsach['Idtin'] ?>"><?php echo $row_danhsach['Tieude'] ?></a></td>
+                                    <td><?php echo $row_danhsach['Ngaydang'] ?></td>
                                     <td>
                                         <a href="#">Sửa</a> |
                                         <a href="#">Xóa</a>
                                     </td>
-
+                                    
                                 </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Cho thuê phòng khu vực Phong Định cảng</td>
-                                    <td>20/11/2019</td>
-                                    <td>
-                                        <a href="#">Sửa</a> |
-                                        <a href="#">Xóa</a>
-                                    </td>
-
-                                </tr>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Cho thuê phòng khu vực Phong Định cảng</td>
-                                    <td>20/11/2019</td>
-                                    <td>
-                                        <a href="#">Sửa</a> |
-                                        <a href="#">Xóa</a>
-                                    </td>
-
-                                </tr>
+                                <?php }?>
+                                
                             </tbody>
                         </table>
                     </div>

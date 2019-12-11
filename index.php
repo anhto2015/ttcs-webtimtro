@@ -64,6 +64,10 @@ if(isset($_GET["p"]))
                                         case "tintheoloai":
                                             include"modules/divmaincontent.php";
                                              include"pages/tintheoloai.php"; break;
+                                             case "timkiem":
+                                                include"modules/divmaincontent.php";
+                                                 include"pages/timkiem.php"; break;
+                                                
 
 
 

@@ -50,7 +50,7 @@
         <li>
             <p>
                 <i class="fa fa-list"></i>
-                <a href="#" >
+                <a href="index.php?p=danhsachbaidang" >
                     Danh sách bài đăng
                 </a>
             </p>
