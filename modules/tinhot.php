@@ -1,6 +1,6 @@
 <?php 
 include"lib/dbcon.php";
-$sql = "SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong WHERE tbltin.Tinhot=0 LIMIT 0,6";
+$sql = "SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong WHERE tbltin.Tinhot=1 LIMIT 0,6";
 $query=mysqli_query($con,$sql);
 ?>
 
@@ -30,7 +30,7 @@ $query=mysqli_query($con,$sql);
                                         <span>HOT</span>
                                     </div>
                                     <div class="info-real">
-                                        <h4><a href="index.php?p=chitiettin&idtin=<?php echo $row_tinhot['Idtin'] ?>">Cần cho thuê trọ gần trường Đại học Vinh khu vực Bến Thủy</a></h4>
+                                        <h4><a href="index.php?p=chitiettin&idtin=<?php echo $row_tinhot['Idtin'] ?>"><?php echo $row_tinhot['Tieude'] ?></a></h4>
                                         <p>
                                             <i class="fa fa-usd">  </i> Giá:
                                             <strong><?php echo $row_tinhot['Gia'] ?>đ/ Tháng</strong>

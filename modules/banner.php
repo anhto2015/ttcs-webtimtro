@@ -33,7 +33,8 @@
                                 <div class="col-xs-12 col-md-12 col-ms-12 col-lg-6">
                                     <div class="search-form-content">
                                         <h5 class="search-title-sub">Tìm kiếm nhanh theo nhu cầu</h5>
-                                        <form action="pages/timkiem.php" method="GET">
+                                        <form action="" method="GET">
+                                        <input type="hidden" name="p" value="timkiem">
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     <select name="diachi" id="input" class="form-control" required="required">
@@ -103,7 +104,7 @@
                                                 
 
                                             </div>
-                                            <input type="hidden" name="p" value="timkiem">
+                                            
                                         </form>
                                     </div>
                                 </div>

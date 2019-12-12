@@ -1,14 +1,15 @@
 <?php 
-include"../lib/dbcon.php";
-if(isset($_GET["submit"])){
+include"lib/dbcon.php";
         $diachi=$_GET["diachi"];settype($diachi,"int");
         $loaitin=$_GET["loaitin"];settype($loaitin,"int");
         $gia=$_GET["gia"];settype($gia,"int");
         $dientich=$_GET["dientich"];settype($dientich,"int");
         
+        
+        
         switch($gia){
-            case 0:$qrgia="";
-            case 1:$qrgia="";
+            case 0:$qrgia="";break;
+            case 1:$qrgia="";break;
             case 2: $qrgia="and t.Gia<500000";break;
             case 3:$qrgia="and t.Gia BETWEEN 500000 AND 1000000";break;
             case 4:$qrgia="and t.Gia BETWEEN 1000000 AND 1500000";break;
@@ -17,7 +18,7 @@ if(isset($_GET["submit"])){
             case 7: $qrgia="and t.Gia>4000000";break;
         }
         switch($dientich){
-            case 0:$qrdientich="";
+            case 0:$qrdientich="";break;
             case 1: $qrdientich="and t.Dientich<15";break;
             case 2:$qrdientich="and t.Dientich BETWEEN 15 AND 20";break;
             case 3:$qrdientich="and t.Dientich BETWEEN 20 AND 25";break;
@@ -27,21 +28,22 @@ if(isset($_GET["submit"])){
 
         }
         $query="SELECT * FROM tbltin AS t INNER JOIN tblloaitin as lt ON t.Malt=lt.Malt
-         INNER join tblphuong as p on t.Idphuong=p.Idphuong WHERE t.Malt=$loaitin AND t.Idphuong=$diachi $qrgia $qrdientich";
+         INNER join tblphuong as p on t.Idphuong=p.Idphuong WHERE t.Malt=$loaitin and t.Idphuong=$diachi $qrgia $qrdientich";
         $query_timkiem=mysqli_query($con,$query);
-        while($row_timkiem=mysqli_fetch_array($query_timkiem)){
         
-        echo $row_timkiem["Tieude"];}
-}
+        
+        
+
 
 ?>
 
+<!-- start-content-left -->
 <div class="col-xs-12 col-col-md-12 col-sm-12 col-lg-9">
     <div class="content">
         <div class="block-reals">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a href="index.php?p=tintheoloai&loaitin=$loaitin" class="nav-link active">Tìm Kiếm</a>
+                    <a href="index.php?p=tintheoloai&loaitin=1" class="nav-link active">Tìm kiếm</a>
                 </li>
             </ul>
             <div class="tab-content">
@@ -49,24 +51,27 @@ if(isset($_GET["submit"])){
                     <div class="list-reals">
                         <!-- thong-tin -->
 
-                       
+                        <?php 
+                                                    
+                        while($row_timkiem =mysqli_fetch_array($query_timkiem)){
+                        ?>
                         <div class="detail-list">
                             <a href="index.php?p=chitiettin">
-                                <img src="image/info/" >
+                                <img src="image/info/<?php echo $row_timkiem['Anh'] ?>" >
                             </a>
                             <div class="info-real">
                                 <h4>
-                                    <a href="index.php?p=chitiettin&idtin=</a>
+                                    <a href="index.php?p=chitiettin&idtin=<?php echo $row_timkiem['Idtin'] ?>"><?php echo $row_timkiem['Tieude'] ?></a>
                                 </h4>
                                 <p class="info-text-reals">
-                                AAAAAA
+                                <?php echo $row_timkiem['Noidung'] ?>
                                 </p>
                                 <div>
                                     <div class="row">
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                             <p>
                                                 <i class="fa fa-usd">  </i> Giá:
-                                                <strong>33/ Tháng</strong>
+                                                <strong><?php echo $row_timkiem['Gia'] ?>/ Tháng</strong>
                                             </p>
                                         </div>
                                         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
@@ -75,7 +80,7 @@ if(isset($_GET["submit"])){
                                                                                     
                                                                                     
                                                                                 </i> Diện tích:
-                                                <strong>22m
+                                                <strong><?php echo $row_timkiem['Dientich'] ?>m
                                                                                         <sup>2</sup>
                                                                                     </strong>
                                             </p>
@@ -86,16 +91,16 @@ if(isset($_GET["submit"])){
                                     <i class="fa fa-map-marker"></i>
                                     <span>
                                                                 Khu vực
-                                                                <strong>NO</strong>
+                                                                <strong><?php echo $row_timkiem['Tenphuong'] ?></strong>
                                                             </span>
-                                    <span class="date-right"></span>
+                                    <span class="date-right"><?php echo $row_timkiem['Ngaydang'] ?></span>
                                 </p>
                             </div>
                             <div class="clearfix"></div>
                         </div>
                         <!-- end-thongtin -->
                         
-                                                    
+                                                    <?php }?>
 
 
                     </div>
@@ -107,5 +112,4 @@ if(isset($_GET["submit"])){
         </div>
     </div>
 </div>
-<!-- end-content-left -->
-
+<!-- end-content-left -->       

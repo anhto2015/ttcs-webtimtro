@@ -26,7 +26,7 @@ else{
         <div class="block-reals">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a href="index.php?p=tintheoloai&loaitin=$loaitin" class="nav-link active"><?php echo $row_lt['Tenlt'] ?></a>
+                    <a href="index.php?p=tintheoloai&loaitin=1" class="nav-link active"><?php echo $row_lt['Tenlt'] ?></a>
                 </li>
             </ul>
             <div class="tab-content">
