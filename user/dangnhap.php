@@ -22,7 +22,7 @@ if(isset($_POST["submit"])){
                                     <h3>Đăng nhập</h3>
                                     <h4 class="thongbao">
                                         <?php echo'Tài khoản hoặc mật khẩu không chính xác';}}?>
-                                    </5>
+                                    </h4>
                                     <article class="post-content">
                                         <div class="login">
                                             <div class="formdangnhap">

@@ -35,7 +35,7 @@ if(!isset($_SESSION["Id"])){
                                     <td><?php echo $row_danhsach['Ngaydang'] ?></td>
                                     <td>
                                         <a href="#">Sửa</a> |
-                                        <a href="#">Xóa</a>
+                                        <a href="user/xulyxoabai.php?d=<?php echo $row_danhsach['Idtin'] ?>">Xóa</a>
                                     </td>
                                     
                                 </tr>

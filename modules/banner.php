@@ -38,7 +38,7 @@
                                             <div class="row">
                                                 <div class="col-lg-4">
                                                     <select name="diachi" id="input" class="form-control" required="required">
-                                                            <option value="NULL">Chọn Phường</option>
+                                                            <option value="0">Chọn Phường</option>
                                                             <option value="10">Bến Thủy</option>
                                                             <option value="11">Cửa Nam</option>
                                                             <option value="12">Đội Cung</option>
@@ -69,7 +69,7 @@
                                                 </div>
                                                 <div class="col-lg-4">
                                                     <select name="loaitin" id="input" class="form-control" required="required">
-                                                            <option value="all">Loại Tin</option>
+                                                            <option value="0">Loại Tin</option>
                                                             <option value="1">Phòng Trọ</option>
                                                             <option value="2">Ở Ghép</option>
                                                             <option value="3">Chug cư mini</option>

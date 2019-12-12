@@ -103,7 +103,7 @@ include"lib/dbcon.php";
                         </p>
                         <p>&nbsp;</p>
                         <p>
-                            
+                        <img class="infoo" src="image/info/<?php echo $row_tin['Anh'] ?>" alt="">
                             <?php while($row_anh=mysqli_fetch_array($query_anh)){
                                 
                                 ?>
