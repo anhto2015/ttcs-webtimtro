@@ -8,7 +8,7 @@ if(!isset($_SESSION["Id"])){
             <div class="content-single-news">
                 <h3>Đăng tin phòng trọ</h3>
                 <article class="post-content">
-                    <form action="" method="POST">
+                    <form action="user/xulydangbai.php" method="POST" enctype="multipart/form-data">
                         <div class="row">
                             <!-- tieude -->
                             <div class="col-lg-12">
@@ -123,6 +123,31 @@ if(!isset($_SESSION["Id"])){
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="col-lg-6 ">
+                                <div class="item ">
+                                    <label for=" ">
+                            Ảnh đại diện(Hãy đăng ảnh để được nhiều người xem hơn)
+                            
+                            </label>
+                                    <div class="item-input ">
+                                        <input type="file" name="avatar">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-6 ">
+                                <div class="item ">
+                                    <label for=" ">
+                            Ảnh
+                            
+                            </label>
+                                    <div class="item-input ">
+                                        <input type="file"  name="hinh[]">
+                                    </div>
+                                </div>
+                            </div>
+
                             <div class="col-lg-12">
                             <div class="more">
                                 <input type="submit" value="Cập nhật" class="btnSubmit">

@@ -34,7 +34,7 @@ if(!isset($_SESSION["Id"])){
                                     <td><a href="index.php?p=chitiettin&idtin=<?php echo $row_danhsach['Idtin'] ?>"><?php echo $row_danhsach['Tieude'] ?></a></td>
                                     <td><?php echo $row_danhsach['Ngaydang'] ?></td>
                                     <td>
-                                        <a href="#">Sửa</a> |
+                                        <a href="index.php?p=suabai&idtin=<?php echo $row_danhsach['Idtin'] ?>">Sửa</a> |
                                         <a href="user/xulyxoabai.php?d=<?php echo $row_danhsach['Idtin'] ?>">Xóa</a>
                                     </td>
                                     
