@@ -54,6 +54,6 @@ foreach($_FILES['hinh']['name'] as $key=>$value){
     mysqli_query($con,$themanh);
 }
 
-header('location:../index.php');
+header('location:../index.php?p=danhsachbaidang');
 }    
 ?>

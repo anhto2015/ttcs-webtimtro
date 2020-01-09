@@ -12,6 +12,7 @@ if(isset($_POST["submit"])){
         $row=mysqli_fetch_array($user);
         $_SESSION["Id"]=$row['Iduser'];
         $_SESSION["Taikhoan"]=$row['Taikhoan'];
+        $_SESSION["Quyen"]=$row['Quyen'];
         header('location: index.php');
     }
     else{ ?>

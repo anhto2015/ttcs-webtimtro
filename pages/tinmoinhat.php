@@ -1,22 +1,12 @@
 <?php 
 include"lib/dbcon.php";
-if(isset($_GET["loaitin"])){
-    $loaitin=$_GET["loaitin"];
-    settype($loaitin,"int");
-}
-else{
-    $loaitin=1;
-}
-//Thong tin theo loai tin
-    $sql="SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong
-     where Malt=$loaitin 
-     order by Idtin desc
+
+$sql="SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong 
+    order by Idtin desc 
     " ;   
-    $query_loaitin= mysqli_query($con,$sql);
-//Ten loai tin
-    $lt="select * from tblloaitin where Malt='$loaitin'";
-    $query_tin=mysqli_query($con,$lt);
-    $row_lt=mysqli_fetch_array($query_tin);
+    $query_tinmoi= mysqli_query($con,$sql);
+        
+    $row_lt=mysqli_fetch_array($query_tinmoi);
 
 
 ?>  
@@ -26,7 +16,7 @@ else{
         <div class="block-reals">
             <ul class="nav nav-tabs">
                 <li class="nav-item">
-                    <a href="index.php?p=tintheoloai&loaitin=1" class="nav-link active"><?php echo $row_lt['Tenlt'] ?></a>
+                    <a href="" class="nav-link active">Mới nhất</a>
                 </li>
             </ul>
             <div class="tab-content">

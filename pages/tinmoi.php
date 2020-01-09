@@ -1,7 +1,7 @@
 <?php 
 include"lib/dbcon.php";
     $sql="SELECT * FROM tbltin INNER JOIN tblphuong ON tbltin.Idphuong=tblphuong.Idphuong 
-    order by Idtin desc 
+    order by Idtin desc LIMIT 0,10
     " ;   
     $query_tinmoi= mysqli_query($con,$sql);
 

@@ -70,6 +70,19 @@ if(isset($_GET["p"]))
                                                  case "suabai":
                                                     include"modules/divmaincontent.php";
                                                  include"user/suabai.php"; break;
+                                                 case "qlbd":
+                                                    include"modules/divmaincontent.php";
+                                                 include"admin/quanlybaidang.php"; break;
+                                                 case "qltk":
+                                                    include"modules/divmaincontent.php";
+                                                 include"admin/quanlynguoidung.php"; break;
+                                                 case "tinmoi":
+                                                 include"modules/divmaincontent.php";
+                                                 include"pages/tinmoinhat.php"; break;
+                                                 case "tim":
+                                                    include"modules/divmaincontent.php";
+                                                    include"pages/timkiemtukhoa.php"; break;
+
                                                     
                                                 
 

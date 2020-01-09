@@ -81,7 +81,7 @@ include"lib/dbcon.php";
                                                 
                                             </div>
                                             <div class="more">
-                                                <a href="#">Xem tất cả</a>
+                                                <a href="index.php?p=tinmoi">Xem tất cả</a>
                                             </div>
                                         </div>
                                     </div>

@@ -15,8 +15,8 @@
                                         <div class="itop-search-content">
                                             <form method="GET" action="#">
                                                 <div class="itop-search-key">
-                                                    <input type="hidden" class="its=type-val" name="type" value="1">
-                                                    <input type="text" class="its-key" id="textSearch" name="q" placeholder="Nhập khu vực,địa điểm muốn tìm" autocomplete="off">
+                                                    <input type="hidden" class="its=type-val" name="p" value="tim">
+                                                    <input type="text" class="its-key" id="textSearch" name="ten" placeholder="Nhập khu vực,địa điểm muốn tìm" autocomplete="off">
                                                 </div>
                                                 <button type="submit" class="its-submit">Tìm kiếm</button>
                                             </form>

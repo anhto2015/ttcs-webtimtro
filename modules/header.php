@@ -27,7 +27,11 @@ ob_start();?>
                             require"modules/login-header.php";
                         }
                         else{
-                            require"modules/user-header.php";}?></div>
+                            if($_SESSION["Quyen"]==0){
+                            require"modules/user-header.php";}
+                            else {
+                                require"modules/admin-header.php";}
+                            }?></div>
                         </div>
                     </div>
                 </div>
